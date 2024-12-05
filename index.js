@@ -80,7 +80,7 @@ app.post("/movie/book-movie", async (req, res) => {
 
   // NaN -> Not a Number
   if (isNaN(requestedSeat) || requestedSeat <= 0) {
-    return res.status(401).json({ message: "Invalid seat count" });
+    return res.status(401).json({ message: "In valid seat count" });
   }
 
   try {
